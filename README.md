@@ -1,46 +1,46 @@
-# Getting Started with Create React App
+# Teast project: Financial Dashboard Widget with US Stock Market Data
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Getting Started with React App
 
-## Available Scripts
+```
+git clone https://github.com/ClydeUrov/finance
 
-In the project directory, you can run:
+cd finance
 
-### `npm start`
+npm install
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+npm start
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+npm test
+```
 
-### `npm test`
+### In this project the following were created:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- One page with StockPriceWidget
+- Stock Cards component using @radix-ui/themes
+- Loader component using react-loader-spinner
+- Chart component using react-chartjs-2 and chart.js
 
-### `npm run build`
+- Connection to API alphavantage.co in alphaVantageAPI.ts
+- Connection to devapi.ai in devAPI.ts (not used)
+- Connection to fake stock
+Note: alphavantage.co only provides 25 requests per day, so the all data may not be visible.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Some tests using Jest in src\components\__tests__
+Note: Lack of time affected them..) I need little more time for create more interesting and practical tests without fails.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Types
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Technologies used in the project:
 
-### `npm run eject`
+- react
+- radix-ui/themes
+- axios
+- chart.js
+- typescript
+- jest
+- tailwindcss
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Print Screen
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Alt текст](src/icons/ps.PNG)

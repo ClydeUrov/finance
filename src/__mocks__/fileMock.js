@@ -1,0 +1,1 @@
+module.exports = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fandreyex.ru%2Fnovosti%2Fhtml-img-vstavka-izobrazhenij-na-vashu-stranitsu%2F&psig=AOvVaw27aNSNl7x9Xn5rgRlHnw9d&ust=1710684152695000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCODV-5v5-IQDFQAAAAAdAAAAABAS';
