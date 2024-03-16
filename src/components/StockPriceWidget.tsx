@@ -20,14 +20,14 @@ const StockPriceWidget = () => {
 
   const fetchStockDataCallback = useCallback(async () => {
     try {
-      // const updatedStockPrice = await Promise.all(SYMBOLS.map(fetchStockData));
-      // const validStockPrice = updatedStockPrice.filter(stock => stock !== null) as StockInfo[];
+      const updatedStockPrice = await Promise.all(SYMBOLS.map(fetchStockData));
+      const validStockPrice = updatedStockPrice.filter(stock => stock !== null) as StockInfo[];
       const fakeStocksInfo = Object.entries(fakeStock).map(([symbol, stockData]) => ({
         symbol,
         times: stockData.times,
         prices: stockData.prices,
       }));
-      setStockInfo([...fakeStocksInfo]); //...validStockPrice,
+      setStockInfo([...validStockPrice, ...fakeStocksInfo]);
     } catch (error) {
       console.error('Failed to fetch stock price:', error);
     } finally {
