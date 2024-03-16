@@ -1,11 +1,9 @@
 import { useCallback, useEffect, useState } from 'react';
 import StockCard from './StockCard';
 import { fakeStock } from '../helpers/fakeStock';
-import { Flex } from '@radix-ui/themes';
 import { StockInfo } from '../types/types';
 import { fetchStockData } from '../helpers/apiReq';
 import Loader from './Loader';
-import { act } from 'react-dom/test-utils';
 
 const SYMBOLS = [
   "NVDA",
@@ -45,11 +43,11 @@ const StockPriceWidget = () => {
         <Loader />
       ) : (
         stockInfo.length ? (
-          <Flex className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8'>
+          <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8'>
             {stockInfo.map((stock, index) => (
               <StockCard key={index} stock={stock} />
             ))}
-          </Flex>
+          </div>
         ) : (
           <p className='text-2xl'>List of Stocks is empty</p>
         )

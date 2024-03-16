@@ -14,7 +14,7 @@ export const fetchStockData = async (symbol: string): Promise<StockInfo | null> 
       return null;
     }
     if (!rawData || !rawData["Meta Data"] || !rawData["Time Series (5min)"]) {
-      console.error(`Received empty or invalid data for symbol ${symbol}`);
+      console.error(`Received empty or invalid data from Alpha Vantage API for symbol ${symbol}`);
       return null;
     }
 

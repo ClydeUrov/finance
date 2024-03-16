@@ -50,7 +50,6 @@ const ChartArea = ({ labels, prices, increasing }: ChartAreaProps) => {
           }
           const {
             ctx,
-            data,
             chartArea: { top, bottom },
           } = context.chart;
           const gradientBg = ctx.createLinearGradient(0, top, 0, bottom);

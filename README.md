@@ -17,7 +17,7 @@ npm test
 ### In this project the following were created:
 
 - One page with StockPriceWidget
-- Stock Cards component using @radix-ui/themes
+- Stock Cards component
 - Loader component using react-loader-spinner
 - Chart component using react-chartjs-2 and chart.js
 
@@ -34,12 +34,12 @@ Note: Lack of time affected them..) I need little more time for create more inte
 ### Technologies used in the project:
 
 - react
-- radix-ui/themes
 - axios
 - chart.js
 - typescript
 - jest
 - tailwindcss
+
 
 #### Print Screen
 
